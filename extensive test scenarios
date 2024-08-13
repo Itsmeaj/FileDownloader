@@ -1,0 +1,17 @@
+Non-Automatable Test Scenarios
+
+1. Network Issues or API Rate Limits:
+
+Description: Test how the script behaves under network instability or Google Drive API rate limits.
+Manual Test: Simulate network issues using tools like tc in Linux or deliberately exhaust API limits.
+Expected Result: The script should either retry the connection or fail gracefully with a clear error message.
+
+2. Large File Downloads:
+Description: Test the script's ability to handle very large files, which may cause timeouts or memory issues.
+Manual Test: Attempt to download a large file (e.g., > 1GB).
+Expected Result: The file should download successfully, or the script should provide feedback on issues like timeouts.
+
+3. Google Drive Permissions:
+Description: Test how the script reacts when the Google Drive file is not shared with the user (insufficient permissions).
+Manual Test: Attempt to download a file without sharing it with the service account.
+Expected Result: The script should fail with an appropriate error message indicating permission issues.
