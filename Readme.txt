@@ -82,6 +82,8 @@ To download a file from Google Drive, follow these steps:
 ### Example
 
 To download a file named `report.pdf` and save it in `C:\Users\YourName\Downloads`, run:
+User might have to manually authenticate by clicking confirm as google has strong way of authenticating users.
+after selecting the account and clicking on confirm, the file will be downloaded.
 
 ```bash
 python file_downloader.py --file_name "report.pdf" --download_path "C:\Users\YourName\Downloads"
