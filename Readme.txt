@@ -56,8 +56,6 @@ This project allows you to download files from Google Drive by specifying their 
 
 ## How to Assign Test Users
 
-If your app is in development and hasn't been verified by Google, you'll need to add test users:
-
 1. **Go to OAuth Consent Screen**:
    - Navigate to **APIs & Services > OAuth consent screen** in the Google Cloud Console.
 
@@ -65,6 +63,7 @@ If your app is in development and hasn't been verified by Google, you'll need to
    - Scroll down to the "Test users" section.
    - Click **Add users** and enter the email addresses of the users you want to add as testers.
    - Save the changes.
+This is required to login without going through any prompt after first time login
 
 ## Running the Script
 
